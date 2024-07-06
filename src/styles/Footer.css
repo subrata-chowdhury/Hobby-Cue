@@ -1,0 +1,14 @@
+.btn-purple {
+    background-color: #8e44ad;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.left-border-0 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

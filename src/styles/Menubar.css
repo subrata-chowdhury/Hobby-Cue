@@ -1,0 +1,22 @@
+/* Menubar.css */
+.logo-square {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+  }
+  
+  .navbar .btn-link {
+    text-decoration: none;
+  }
+  
+  .navbar .input-group {
+    width: 300px;
+  }
+  
+  /* Adjust the negative margin for the search button */
+  .navbar .input-group .ms-n3 {
+    margin-left: -3px !important;
+  }

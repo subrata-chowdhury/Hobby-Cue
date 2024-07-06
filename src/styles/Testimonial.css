@@ -1,0 +1,25 @@
+.btn-play {
+    background-color: #fff;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress {
+    flex-grow: 1;
+    height: 5px;
+    background-color: #e0e0e0;
+}
+
+.progress-bar {
+    background-color: #8064A2;
+}
+
+.time {
+    font-size: 0.8rem;
+    color: #666;
+}
