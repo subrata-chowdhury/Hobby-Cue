@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Menubar from './components/Menubar'
 import SignInForm from './components/SignUpAndJoinInSlide'
 import CardsSection from './components/CardsSection'
@@ -8,8 +9,20 @@ import Footer from './components/Footer'
 import AboutSection from './components/About'
 import GoToTop from './components/GoToTop'
 import './App.css'
+import AddNewPage from './components/AddNewPage'
 
 function App() {
+	return (
+		<BrowserRouter basename='/Hobby-Cue/dist/'>
+            <Routes>
+                <Route path='/' exact element={<HomePage />}></Route>
+                <Route path='/Add-New' exact element={<AddNewPage />}></Route>
+            </Routes>
+        </BrowserRouter>
+	)
+}
+
+function HomePage() {
 	return (
 		<div>
 			<Menubar />

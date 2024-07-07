@@ -1,0 +1,42 @@
+.border-violet {
+    border-color: #8064A2 !important;
+}
+
+.border-violet:hover {
+    background: #8064A2;
+}
+
+.border-violet:hover p,
+.border-violet:hover h4,
+.border-green:hover p,
+.border-green:hover h4,
+.border-red:hover p,
+.border-red:hover h4,
+.border-blue:hover p,
+.border-blue:hover h4 {
+    color: #fff !important;
+}
+
+.border-green {
+    border-color: #77933C !important;
+}
+
+.border-green:hover {
+    background: #77933C;
+}
+
+.border-red {
+    border-color: #C0504D !important;
+}
+
+.border-red:hover {
+    background: #C0504D;
+}
+
+.border-blue {
+    border-color: #0096C8 !important;
+}
+
+.border-blue:hover {
+    background: #0096C8;
+}

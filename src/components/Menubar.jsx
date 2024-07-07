@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Menubar = () => {
+    const navigate = useNavigate();
     return (
         <header className="navbar navbar-expand-lg navbar-light bg-white shadow-sm position-fixed w-100 top-0 start-0" style={{ zIndex: 5 }}>
             <div className="container">
                 <div className='row w-100'>
                     <div className='col d-flex flex-row align-items-center'>
-                        <a className="navbar-brand d-flex align-items-center col" href="#">
+                        <a className="navbar-brand d-flex align-items-center col" onClick={() => {
+                            navigate('/');
+                        }} href=''>
                             <img src='logo.png' className='w-100 px-3' />
                         </a>
                         <form className="d-flex mx-auto col d-none d-lg-block">
                             <div className="input-group w-100">
-                                <input className="form-control border-end-0 rounded-start" type="search" placeholder="Search here..." style={{ backgroundColor: "#F8F9FA" }} />
+                                <input className="form-control border-end-0 rounded-start fs-6" type="search" placeholder="Search here..." style={{ backgroundColor: "#F8F9FA" }} />
                                 <button className="btn btn-outline-secondary btn-primary rounded-end border-start-0 d-flex align-items-center px-3" type="submit">
                                     <img src="icons8_search 1.svg"></img>
                                 </button>

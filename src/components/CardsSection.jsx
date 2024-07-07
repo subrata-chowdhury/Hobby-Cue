@@ -7,7 +7,7 @@ const CardsSection = () => {
             <div className="row row-cols-1 row-cols-lg-2 g-4">
                 <Card
                     iconSrc="groups.svg"
-                    name="Teacher"
+                    name="People"
                     text="Find a teacher, coach, or expert for your hobby interest in your locality. Find a partner, teammate, accompanist or collaborator."
                     btn="Connect"
                 />
