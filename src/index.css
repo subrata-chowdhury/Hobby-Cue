@@ -1,0 +1,51 @@
+:root {
+    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+	padding: 5px 20px;
+    text-decoration: none;
+}
+
+.btn-outline-primary {
+	color: #8064A2;
+	border-color: #8064A2;
+}
+
+.btn-outline-primary:hover {
+	background-color: #8064A2;
+	color: white;
+}
+
+.btn-primary {
+    background-color: #8064A2;
+    border-color: #8064A2;
+}
+
+.btn-primary:hover {
+    background-color: #6a5286;
+    border-color: #6a5286;
+}
+
+.text-primary {
+    color: #8064A2 !important;
+}
+
+.text-info {
+    color: #0096C8 !important;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.left-border-0 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.right-border-0 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}

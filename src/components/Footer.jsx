@@ -1,12 +1,11 @@
 import React from 'react';
-import '../styles/Footer.css'; // For custom styles
 
 const Footer = () => {
     return (
         <>
             <footer className="container bg-white py-4 fs-6 mt-5">
-                <div className="row">
-                    <div className="col-md-3">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div className="col mb-4">
                         <h5>Hobbycue</h5>
                         <ul className="list-unstyled">
                             <li className='mb-1'><a href="#">About Us</a></li>
@@ -16,7 +15,7 @@ const Footer = () => {
                             <li className='mb-1'><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col mb-4">
                         <h5>How Do I</h5>
                         <ul className="list-unstyled">
                             <li className='mb-1'><a href="#">Sign Up</a></li>
@@ -27,7 +26,7 @@ const Footer = () => {
                             <li className='mb-1'><a href="#">Other Queries</a></li>
                         </ul>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col mb-4">
                         <h5>Quick Links</h5>
                         <ul className="list-unstyled">
                             <li className='mb-1'><a href="#">Listings</a></li>
@@ -36,13 +35,13 @@ const Footer = () => {
                             <li className='mb-1'><a href="#">Community</a></li>
                         </ul>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col mb-4">
                         <SocialMedia />
                         <div className='mt-4'>
                             <h5>Invite Friends</h5>
                             <form className="d-flex">
-                                <input type="email" className="form-control rounded-start" placeholder="Email ID" />
-                                <button type="submit" className="btn btn-purple rounded-end left-border-0" style={{ fontWeight: '600' }}>Invite</button>
+                                <input type="email" className="form-control rounded-start right-border-0" placeholder="Email ID" style={{ borderColor: '#8064A2' }} />
+                                <button type="submit" className="btn btn-primary rounded-end left-border-0" style={{ fontWeight: '600' }}>Invite</button>
                             </form>
                         </div>
                     </div>
@@ -50,7 +49,7 @@ const Footer = () => {
             </footer>
             <div className="container-fluid py-4" style={{ backgroundColor: '#F7F5F9' }}>
                 <div className="col text-center">
-                    <small style={{ fontWeight: '600' }}>&copy; Purple Cues Private Limited</small>
+                    <p className='p-0 m-0' style={{ fontWeight: '600' }}>&copy; Purple Cues Private Limited</p>
                 </div>
             </div>
         </>
@@ -74,7 +73,7 @@ function SocialMedia() {
             <div className="mb-3 w-100 d-flex justify-content-between">
                 {socialMedia.map((item, index) => (
                     <a href={item.link} key={index}>
-                        <img src={item.icon} className="p-2 me-2 rounded-pill d-flex align-items-center justify-content-center" style={{ backgroundColor: '#EBEDF0' }}></img>
+                        <img src={item.icon} className="p-2 p-lg-1 me-1 rounded-pill d-flex align-items-center justify-content-center" style={{ backgroundColor: '#EBEDF0' }}></img>
                     </a>
                 ))}
             </div>

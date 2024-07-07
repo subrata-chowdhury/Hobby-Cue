@@ -1,0 +1,17 @@
+.home-screen {
+    max-height: 93vh;
+}
+
+.grp-img {
+    transform: translate(0, -25%);
+}
+
+@media (max-width: 992px) {
+    .home-screen {
+        max-height: none;
+    }
+
+    .grp-img {
+        transform: translate(0, 0%);
+    }
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/AddYourOwnCardSection.css'; // For custom styles
 import { Card } from './Card';
 
 const AddYourOwnCardSection = () => {

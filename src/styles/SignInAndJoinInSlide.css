@@ -1,29 +1,20 @@
-/* SignInForm.css */
-.card {
-    border-radius: 15px;
-  }
-  
-  .nav-pills .nav-link {
-    border-radius: 0;
-  }
-  
-  .nav-pills .nav-link.active {
-    background-color: transparent;
-    color: #000;
-    font-weight: bold;
-    border-bottom: 2px solid #000;
-  }
-  
-  .btn-outline-secondary {
-    border-color: #ccc;
-  }
-  
-  .btn-primary {
-    background-color: #8064A2;
-    border-color: #8064A2;
-  }
-  
-  .btn-primary:hover {
-    background-color: #6a5286;
-    border-color: #6a5286;
-  }
+.nav-pills .nav-link {
+	border-radius: 0;
+}
+
+.nav-pills .nav-link.active {
+	background-color: transparent;
+	color: #000;
+	font-weight: bold;
+	border-bottom: 2px solid #8064A2;
+}
+
+.btn-outline-secondary {
+	border-color: #ccc;
+}
+
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: #ccc;
+}

@@ -4,7 +4,7 @@ import { Card } from './Card';
 const CardsSection = () => {
     return (
         <div className="container my-5">
-            <div className="row row-cols-1 row-cols-md-2 g-4">
+            <div className="row row-cols-1 row-cols-lg-2 g-4">
                 <Card
                     iconSrc="groups.svg"
                     name="Teacher"
