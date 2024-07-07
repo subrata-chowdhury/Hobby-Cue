@@ -7,7 +7,7 @@ function AddNewPage() {
         <div style={{ backgroundColor: '#F8F9FA', minHeight: '93vh', width: '100%' }}>
             <Menubar />
             <div className="mt-5 pt-3 container-fluid">
-                <div className="container-lg card mt-5 mx-auto p-4 pt-2 border-0" style={{width:"55%"}}>
+                <div className="container-lg card mt-5 mx-auto p-4 pt-2 border-0 w-lg-50">
                     <div className="card-body row gy-4 border-secondary">
                         <h4 className="text-dark justify-content-center align-items-center fst-bold" style={{ display: 'flex', gap: '1rem' }}>
                             <img src={"Add (Landing Page).svg"} width={35} height={35} className='mr-5' />
