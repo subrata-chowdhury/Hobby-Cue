@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Menubar = () => {
@@ -30,29 +30,27 @@ const Menubar = () => {
 };
 
 function ToolBar() {
-    const [exploreDropdown, setExploreDropDown] = useState(false)
-    const [hobbieDropdown, setHobbieDropDown] = useState(false)
     return (
         <div className="col p-0 d-flex align-items-center justify-content-end">
             <div className="dropdown d-none d-lg-block">
-                <button className="btn btn-link text-dark p-0 d-flex" type="button" id="exploreDropdown" data-bs-toggle="dropdown" aria-expanded="false" style={{ fontWeight: 500, gap: '5px' }} onMouseEnter={() => { setExploreDropDown(true) }}>
+                <button className="btn btn-link text-dark pe-0 d-flex" type="button" id="exploreDropdown" data-bs-toggle="dropdown" style={{ fontWeight: 500, gap: '5px' }}>
                     <img src='Explore.svg'></img>
                     Explore
                     <img src='expand.svg'></img>
                 </button>
-                <ul className={"dropdown-menu mt-4" + (exploreDropdown ? " d-block" : "")} aria-labelledby="exploreDropdown" onMouseLeave={() => { setExploreDropDown(false) }}>
+                <ul className={"dropdown-menu mt-5"}>
                     <li><a className="dropdown-item" href="#">Action</a></li>
                     <li><a className="dropdown-item" href="#">Another action</a></li>
                     <li><a className="dropdown-item" href="#">Something else here</a></li>
                 </ul>
             </div>
             <div className="dropdown d-none d-lg-block">
-                <button className="btn btn-link text-dark d-flex" type="button" id="hobbiesDropdown" data-bs-toggle="dropdown" aria-expanded="false" style={{ fontWeight: 500, gap: '5px' }} onMouseEnter={() => { setHobbieDropDown(true) }}>
+                <button className="btn btn-link text-dark d-flex" type="button" id="hobbiesDropdown" data-bs-toggle="dropdown" style={{ fontWeight: 500, gap: '5px' }}>
                     <img src='Hobbies.svg'></img>
                     Hobbies
                     <img src='expand.svg'></img>
                 </button>
-                <ul className={"dropdown-menu mt-3" + (hobbieDropdown ? " d-block" : "")} aria-labelledby="hobbiesDropdown" onMouseLeave={() => { setHobbieDropDown(false) }}>
+                <ul className={"dropdown-menu mt-5"} aria-labelledby="hobbiesDropdown">
                     <li><a className="dropdown-item" href="#">Action</a></li>
                     <li><a className="dropdown-item" href="#">Another action</a></li>
                     <li><a className="dropdown-item" href="#">Something else here</a></li>
