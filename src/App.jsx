@@ -13,7 +13,7 @@ import AddNewPage from './components/AddNewPage'
 
 function App() {
 	return (
-		<BrowserRouter basename='/Hobby-Cue/dist/'>
+		<BrowserRouter>
             <Routes>
                 <Route path='/' exact element={<HomePage />}></Route>
                 <Route path='/Add-New' exact element={<AddNewPage />}></Route>
